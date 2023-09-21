@@ -1,5 +1,5 @@
 .posterImage{
-    height: 580px;
+    height: 550px;
 }
 
 .posterImage > img {
@@ -68,5 +68,35 @@
     .posterImage__description {
         font-size: 0.8rem; 
         display: none; 
+    }
+}
+/* Adjustments for mobile */
+@media (max-width: 767px) {
+    .posterImage {
+        height: auto;
+        max-height: 550px;
+    }
+
+    .posterImage > img {
+        width: 100%;
+    }
+
+    .posterImage__overlay {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .posterImage__title, .posterImage__runtime {
+        display: none; /* Hide title and rating on mobile */
+    }
+
+    .posterImage__description {
+        font-size: 1rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .carousel {
+        width: 100%; /* Adjust carousel width for mobile */
     }
 }
